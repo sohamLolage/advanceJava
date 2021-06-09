@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>VideoServlet_1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  <param-name>ComapanyMail</param-name>
+  <param-value>tq@gmail.com</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>serv1</servlet-name>
+  	<servlet-class>com.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>serv1</servlet-name>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>serv2</servlet-name>
+  	<servlet-class>com.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>serv2</servlet-name>
+  	<url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>serv3</servlet-name>
+  <servlet-class>com.ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>serv3</servlet-name>
+  <url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ser4</servlet-name>
+  <servlet-class>com.ContextServletEx</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ser4</servlet-name>
+  <url-pattern>/context</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ser5</servlet-name>
+  <servlet-class>com.ServletConfigEx</servlet-class>
+  <init-param>
+  <param-name>Myname</param-name>
+  <param-value>Soham</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ser5</servlet-name>
+  <url-pattern>/config</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
